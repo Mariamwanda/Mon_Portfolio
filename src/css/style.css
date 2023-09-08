@@ -1,37 +1,18 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  color: black;
+  color: #676a81;
   background: #fff;
   max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
-a,
-a:hover,
-a:active,
-a:focus {
-  display: inline-block;
-  text-decoration: none;
-  color: #6a708e;
-  font-size: 16px;
-  padding: 0;
-}
 h1,
 h2,
 h3,
@@ -39,7 +20,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  color: #43485c;
+  color: red;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
@@ -90,11 +71,6 @@ body {
   opacity: 0;
 }
 
-.fix {
-  position: relative;
-  clear: both;
-}
-
 .top-area {
   position: relative;
   z-index: 9999;
@@ -107,11 +83,12 @@ nav.navbar.bootsnav.no-background {
 }
 
 nav.navbar.bootsnav {
-  background-color: #fff;
+  background-color: red;
   border-bottom: transparent;
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
 }
 
+/*.navbar-brand*/
 .navbar-header a.navbar-brand,
 .navbar-header a.navbar-brand:hover,
 .navbar-header a.navbar-brand:focus {
@@ -122,7 +99,9 @@ nav.navbar.bootsnav {
   padding: 33px 0px 57px;
   text-transform: uppercase;
 }
+/*.navbar-brand*/
 
+/*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
   font-size: 16px;
   font-weight: 400;
@@ -173,7 +152,9 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 .menu-ui-design::-webkit-scrollbar-thumb {
   background-color: #d92cf9;
 }
+/*.menu-ui-design*/
 
+/*.navbar-toggle */
 nav.navbar.bootsnav .navbar-toggle {
   position: relative;
   background-color: transparent;
@@ -184,13 +165,17 @@ nav.navbar.bootsnav .navbar-toggle {
 nav.navbar.bootsnav .navbar-toggle i {
   color: #d92cf9;
 }
+/*.navbar-toggle */
 
+/*-------------------------------------
+        3.  Welcome-hero
+--------------------------------------*/
 .welcome-hero {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: url(../images/about/welcome-banner.jpg) no-repeat;
+  background: url("/src/images/about/welcome-banner.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   height: 890px;
@@ -204,7 +189,6 @@ nav.navbar.bootsnav .navbar-toggle i {
   width: 100%;
   height: 100%;
 }
-
 /*.header-text-area*/
 .header-text h2 {
   color: #fff;
@@ -245,11 +229,7 @@ nav.navbar.bootsnav .navbar-toggle i {
   background: #9f00ff;
   border: 1px solid #9f00ff;
 }
-/*.header-text-area*/
 
-/*-------------------------------------
-      4.  About
---------------------------------------*/
 .about {
   padding: 50px 0 100px;
 }
@@ -343,7 +323,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 /*.single-about-img */
 
 /*-------------------------------------
-      5.  Education
+        5.  Education
 --------------------------------------*/
 
 .education {
@@ -398,7 +378,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 /*.education-horizontal-timeline*/
 
 /*-------------------------------------
-      6.  Skills
+        6.  Skills
 --------------------------------------*/
 .skills {
 }
@@ -470,7 +450,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 /*-------------------------------------
-      7. Experience
+        7. Experience
 -------------------------------------*/
 .experience {
   padding: 50px 0 100px;
@@ -558,7 +538,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   display: none;
 }
 /*-------------------------------------
-      8. Profiles
+        8. Profiles
 --------------------------------------*/
 .profiles {
   padding: 50px 0 100px;
@@ -644,7 +624,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
   border: transparent;
 }
 /*-------------------------------------
-      9. Portfolio
+        9. Portfolio
 --------------------------------------*/
 .portfolio {
   padding: 50px 0 100px;
@@ -722,7 +702,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 } /*.isotope-overlay*/
 
 /*-------------------------------------
-      10. Clients
+        10. Clients
 --------------------------------------*/
 .clients {
   padding-top: 50px;
@@ -744,7 +724,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 
 /*-------------------------------------
-      11. Contact
+        11. Contact
 --------------------------------------*/
 .contact {
   background: #f9fbfd;
@@ -857,7 +837,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 }
 .hm-foot-icon ul li > a:hover {
   color: #b636ff;
-}
+} /*hm-foot-icon*/
 
 .hm-footer-copyright p {
   color: #888ea5;
@@ -867,7 +847,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {
 .hm-footer-copyright p a {
   color: #888ea5;
 }
-
+/*===============================
+    Scroll Top
+===============================*/
 #scroll-Top .return-to-top {
   position: fixed;
   right: 30px;
